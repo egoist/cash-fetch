@@ -1,6 +1,6 @@
 {
   "name": "cash-fetch",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Send HTTP request in browser and node.js",
   "license": "MIT",
   "repository": "egoist/cash-fetch",
