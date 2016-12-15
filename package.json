@@ -1,0 +1,55 @@
+{
+  "name": "cash-fetch",
+  "version": "0.0.0",
+  "description": "Send HTTP request in browser and node.js",
+  "license": "MIT",
+  "repository": "egoist/cash-fetch",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js",
+    "build": "npm run build:browser && npm run build:node",
+    "build:browser": "bili ./src/browser.js --format umd --compress --module-name '$fetch'",
+    "build:node": "bili ./src/index.js --format cjs",
+    "watch": "nswatch",
+    "example": "node examples/node",
+    "serve": "serve"
+  },
+  "browser": "./dist/cash-fetch.js",
+  "main": "./dist/cash-fetch.common.js",
+  "watch": {
+    "./src/*.js": "build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "fetch",
+    "http",
+    "request",
+    "isomorphic"
+  ],
+  "devDependencies": {
+    "babel-jest": "^17.0.2",
+    "babel-preset-es2015": "^6.18.0",
+    "bili": "^0.9.1",
+    "eslint": "latest",
+    "eslint-config-rem": "latest",
+    "jest-cli": "^15.1.1",
+    "nswatch": "^0.2.0",
+    "serve": "^2.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "eslintConfig": {
+    "extends": "rem/esnext"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>get</title>
+</head>
+<body>
+  <div id="app">loading...</div>
+  <script src="../dist/browser.js"></script>
+  <script>
+    $fetch('https://api.github.com/users/egoist')
+      .then(res => res.json())
+      .then(res => {
+        document.getElementById('app').innerHTML = res.login
+      })
+    $fetch('https://api.github.com/users', {
+      query: {page: 2}
+    }).catch(err => {
+      console.log(err.response)
+    })
+  </script>
+</body>
+</html>
