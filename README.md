@@ -40,4 +40,4 @@ $fetch('https://api.github.com/users/egoist')
 **cash-fetch** © [EGOIST](https://github.com/egoist), Released under the [MIT](https://egoist.mit-license.org/) License.<br>
 Authored and maintained by EGOIST with help from contributors ([list](https://github.com/egoist/cash-fetch/contributors)).
 
-> [egoistian.com](https://egoistian.com) · GitHub [@egoist](https://github.com/egoist) · Twitter [@rem_rin_rin](https://twitter.com/rem_rin_rin)
+> [egoistian.com](https://egoistian.com) · GitHub [@egoist](https://github.com/egoist) · Twitter [@_egoistlily](https://twitter.com/_egoistlily)
